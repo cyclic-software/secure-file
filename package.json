@@ -1,8 +1,8 @@
 {
-  "name": "secure-file",
+  "name": "@cyclic.sh/secure-file",
   "version": "0.0.1",
   "description": "Store files securely with a password",
-  "main": "src/cli.mjs",
+  "main": "lib/secure-file.mjs",
   "scripts": {
     "encrypt": "env-cmd node src/cli.mjs encryptFile account.json"
   },
@@ -10,6 +10,9 @@
   "author": "Cyclic Software",
   "license": "GPLV3",
   "devDependencies": {
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
     "env-cmd": "^10.1.0"
   }
 }
