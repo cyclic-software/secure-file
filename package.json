@@ -6,8 +6,8 @@
   "module": "dist/esm/index.js",
   "exports": {
     ".": {
-        "import": "./dist/esm/index.js",
-        "require": "./dist/cjs/index.js"
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
     }
   },
   "scripts": {
@@ -25,13 +25,14 @@
     "@types/jest": "^29.5.2",
     "@types/node": "^20.2.5",
     "env-cmd": "^10.1.0",
+    "semantic-release": "^21.0.3",
     "typescript": "^5.1.3"
   },
   "files": [
     "dist/"
   ],
   "engines": {
-      "node": ">=16.0.0",
-      "npm": ">=8.0.0"
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
   }
 }

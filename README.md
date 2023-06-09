@@ -1,15 +1,14 @@
-# example-secure-file
+# @cyclic.sh/secure-file
 
-This repo provides a few examples of how to securely store and retrieve a file
-using Nodejs and Cyclic.
+This will help you store and retrieve files securely with no dependencies.
+
+[![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
+
+
 
 ## Getting Started
 
-1) Clone repo
-1) `npm ci`
-1) Add your secret file and .env to your `.gitignore`
-1) Create a `.env` file if you don't have one with `SECRET_PASSPHRASE=<some long and secret passphrase>`
-1) Run: `npm run encrypt <YOUR_INPUT_FILENAME>`
+1) `npm install @cyclic.sh/secure-file`
 
 ## Store encrypted file in git
 
