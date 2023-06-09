@@ -11,8 +11,9 @@
     }
   },
   "scripts": {
+    "build": "rm -rf dist/* && tsc -p tsconfig-esm.json && tsc -p tsconfig-cjs.json && bin/generate-package-json.sh",
     "cli:encrypt": "env-cmd node dist/esm/cli.js encryptFile account.json",
-    "build": "rm -rf dist/* && tsc -p tsconfig-esm.json && tsc -p tsconfig-cjs.json && bin/generate-package-json.sh"
+    "prepublishOnly": "node bin/prepublish.js"
   },
   "keywords": [],
   "author": "Cyclic Software",
