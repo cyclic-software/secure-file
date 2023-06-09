@@ -1,0 +1,15 @@
+{
+  "name": "secure-file",
+  "version": "0.0.1",
+  "description": "Store files securely with a password",
+  "main": "src/cli.mjs",
+  "scripts": {
+    "encrypt": "env-cmd node src/cli.mjs encryptFile account.json"
+  },
+  "keywords": [],
+  "author": "Cyclic Software",
+  "license": "GPLV3",
+  "devDependencies": {
+    "env-cmd": "^10.1.0"
+  }
+}
