@@ -27,9 +27,7 @@
     "typescript": "^5.1.3"
   },
   "files": [
-    "dist/",
-    "LICENSE",
-    "README.md"
+    "dist/"
   ],
   "engines": {
       "node": ">=16.0.0",
