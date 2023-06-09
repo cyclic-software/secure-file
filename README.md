@@ -1,6 +1,6 @@
 # @cyclic.sh/secure-file
 
-This will help you store and retrieve files securely with no dependencies.
+This will help you Encrypt, Store and Decrypt files securely with no dependencies.
 
 [![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
 
