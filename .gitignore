@@ -131,4 +131,5 @@ dist
 
 .DS_Store
 lib
-account.json
+account.json*
+dist

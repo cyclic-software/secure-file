@@ -2,9 +2,17 @@
   "name": "@cyclic.sh/secure-file",
   "version": "0.0.1",
   "description": "Store files securely with a password",
-  "main": "lib/secure-file.mjs",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "exports": {
+    ".": {
+        "import": "./dist/esm/index.js",
+        "require": "./dist/cjs/index.js"
+    }
+  },
   "scripts": {
-    "encrypt": "env-cmd node src/cli.mjs encryptFile account.json"
+    "cli:encrypt": "env-cmd node dist/esm/cli.js encryptFile account.json",
+    "build": "rm -rf dist/* && tsc -p tsconfig-esm.json && tsc -p tsconfig-cjs.json && bin/generate-package-json.sh"
   },
   "keywords": [],
   "author": "Cyclic Software",
@@ -13,6 +21,9 @@
     "@babel/cli": "^7.22.5",
     "@babel/core": "^7.22.5",
     "@babel/preset-env": "^7.22.5",
-    "env-cmd": "^10.1.0"
+    "@types/jest": "^29.5.2",
+    "@types/node": "^20.2.5",
+    "env-cmd": "^10.1.0",
+    "typescript": "^5.1.3"
   }
 }

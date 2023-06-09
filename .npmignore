@@ -1,0 +1,8 @@
+bin
+node_modules
+src
+.env*
+.gitignore
+.npmignore
+account.json*
+tsconfig*
