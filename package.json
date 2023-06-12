@@ -25,7 +25,7 @@
     "Kam Lasater (https://github.com/seekayel)"
   ],
   "scripts": {
-    "build": "rm -rf dist/* && tsc -p tsconfig-esm.json && tsc -p tsconfig-cjs.json && generate-package-json.sh",
+    "build": "rm -rf dist/* && tsc -p tsconfig-esm.json && tsc -p tsconfig-cjs.json && config/generate-package-json.sh",
     "cli:encrypt": "env-cmd node dist/esm/cli.js encryptFile account.json",
     "prepublishOnly": "node config/prepublish.js",
     "postpublish": "git restore package.json"
