@@ -10,21 +10,24 @@
       "require": "./dist/cjs/index.js"
     }
   },
+  "bin": {
+    "secure-file": "bin/secure-file"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cyclic-software/secure-file.git"
   },
   "author": {
-      "name": "Cyclic Software",
-      "url": "https://www.cyclic.sh"
+    "name": "Cyclic Software",
+    "url": "https://www.cyclic.sh"
   },
   "contributors": [
-      "Kam Lasater (https://github.com/seekayel)"
+    "Kam Lasater (https://github.com/seekayel)"
   ],
   "scripts": {
-    "build": "rm -rf dist/* && tsc -p tsconfig-esm.json && tsc -p tsconfig-cjs.json && bin/generate-package-json.sh",
+    "build": "rm -rf dist/* && tsc -p tsconfig-esm.json && tsc -p tsconfig-cjs.json && generate-package-json.sh",
     "cli:encrypt": "env-cmd node dist/esm/cli.js encryptFile account.json",
-    "prepublishOnly": "node bin/prepublish.js",
+    "prepublishOnly": "node config/prepublish.js",
     "postpublish": "git restore package.json"
   },
   "keywords": [],
@@ -40,7 +43,8 @@
     "typescript": "^5.1.3"
   },
   "files": [
-    "dist/"
+    "dist/",
+    "bin/"
   ],
   "engines": {
     "node": ">=16.0.0",
